@@ -227,6 +227,17 @@ header .wrapper nav ul li a {
   color: #dadada;
 }
 
+.hamburger {
+  color: transparent;
+  border-top: 6px solid #dadada;
+  border-bottom: 6px solid #dadada;
+  border-radius: 4px;
+  height: 4px;
+  width: 27px;
+  cursor: pointer;
+  display: none;
+}
+
 header nav ul li::after {
   content: '';
   border-bottom: 3px solid #8fd0a6;
@@ -266,6 +277,11 @@ header nav ul li:hover::after {
 }
 
 .image_navigation ul li:hover {
+  background-color: #8fd0a6;
+  transition: 0.5s;
+}
+
+.active_btn {
   background-color: #8fd0a6;
   transition: 0.5s;
 }
@@ -451,6 +467,36 @@ footer .footer_bottom .icon:hover::after {
   .image_navigation ul,
   footer .wrapper .footer_top {
     flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  header nav ul li:last-child {
+    margin: 10px 0;
+  }
+
+  header nav {
+    opacity: 0;
+    height: 0;
+  }
+
+  .menu_hide {
+    opacity: 0;
+    height: 0px;
+    transition: 0.5s;
+  }
+
+  .menu_show {
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
   }
 
   .all_images_window figure img {
