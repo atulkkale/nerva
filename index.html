@@ -41,7 +41,7 @@
     <link rel="stylesheet" media="screen" href="assets/css/style.css" />
 
     <!-- Font awesome style-sheet. -->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/all.min.css" /> -->
   </head>
 
   <body>
@@ -68,14 +68,14 @@
         <!-- Image navigation section starts here. -->
         <section class="image_navigation">
           <div class="wrapper">
-            <ul>
-              <li>all</li>
-              <li>wallpapers</li>
-              <li>logos</li>
-              <li>business card</li>
-              <li>stationary</li>
-              <li>websites</li>
-              <li>mobile apps</li>
+            <ul class="navigation_elements">
+              <li class="nav_element">all</li>
+              <li class="nav_element">wallpapers</li>
+              <li class="nav_element">logos</li>
+              <li class="nav_element">business card</li>
+              <li class="nav_element">stationary</li>
+              <li class="nav_element">websites</li>
+              <li class="nav_element">mobile apps</li>
             </ul>
           </div>
         </section>
@@ -84,46 +84,46 @@
         <!-- All images window section starts here. -->
         <section class="all_images_window">
           <div class="wrapper">
-            <figure>
+            <figure class="figure_div business_card logo websites mobile_apps">
               <img src="assets/images/image1.png" alt="Kate and julia" />
             </figure>
-            <figure><img src="assets/images/image2.png" alt="Nuvem" /></figure>
-            <figure>
+            <figure class="figure_div business_card logo websites mobile_apps"><img src="assets/images/image2.png" alt="Nuvem" /></figure>
+            <figure class="figure_div websites">
               <img src="assets/images/image3.png" alt="Project title" />
             </figure>
-            <figure>
+            <figure class="figure_div wallpaper stationary">
               <img src="assets/images/image4.png" alt="Library" />
             </figure>
-            <figure>
+            <figure class="figure_div">
               <img src="assets/images/image5.png" alt="Mercado" />
             </figure>
-            <figure>
+            <figure class="figure_div business_card logo websites">
               <img src="assets/images/image6.png" alt="Gira o mundo" />
             </figure>
-            <figure>
+            <figure class="figure_div wallpaper stationary">
               <img src="assets/images/image7.png" alt="Furniture" />
             </figure>
-            <figure>
+            <figure class="figure_div business_card">
               <img src="assets/images/image8.png" alt="Prefect" />
             </figure>
-            <figure><img src="assets/images/image9.png" alt="Love" /></figure>
-            <figure>
+            <figure class="figure_div business_card"><img src="assets/images/image9.png" alt="Love" /></figure>
+            <figure class="figure_div wallpaper stationary">
               <img src="assets/images/image10.png" alt="Dining" />
             </figure>
-            <figure>
+            <figure class="figure_div business_card logo websites mobile_apps">
               <img src="assets/images/image11.png" alt="Kate and julia" />
             </figure>
-            <figure><img src="assets/images/image12.png" alt="Shop" /></figure>
-            <figure>
+            <figure class="figure_div stationary websites"><img src="assets/images/image12.png" alt="Shop" /></figure>
+            <figure class="figure_div websites">
               <img src="assets/images/image13.png" alt="Coco ville" />
             </figure>
-            <figure>
+            <figure class="figure_div stationary websites">
               <img src="assets/images/image14.png" alt="Coco ville" />
             </figure>
-            <figure>
+            <figure class="figure_div wallpaper stationary websites">
               <img src="assets/images/image15.png" alt="Spicemode" />
             </figure>
-            <figure><img src="assets/images/image16.png" alt="Paper" /></figure>
+            <figure class="figure_div"><img src="assets/images/image16.png" alt="Paper" /></figure>
           </div>
         </section>
         <!-- All images window section ends here. -->
@@ -237,5 +237,7 @@
 
       <!-- Footer section ends here. -->
     </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
