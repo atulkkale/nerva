@@ -1,7 +1,6 @@
 var nav_element = document.querySelectorAll('.nav_element a'); // Here we select all navigation elements.
 var images_figure_div = document.getElementsByClassName('figure_div'); // Here we select all images in all images window section.
 var fixed_div = document.getElementsByClassName('fixed_div'); // Here we select all images including footer images.
-console.log(fixed_div);
 var hamburger = document.querySelector('.hamburger');
 var hamburger_close = document.getElementById('hamburger_close');
 
