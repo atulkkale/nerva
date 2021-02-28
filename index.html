@@ -50,9 +50,12 @@
       <header>
         <div class="wrapper">
           <h1><a href="index.html" title="Nerva">nerva</a></h1>
-          <div class="hamburger">h</div>
+          <div class="hamburger">hamburger</div>
           <nav>
             <ul>
+              <li>
+                <span id="hamburger_close" class="hamburger_close">X</span>
+              </li>
               <li><a href="#FIXME" title="Home">home</a></li>
               <li><a href="#FIXME" title="About">about</a></li>
               <li><a href="#FIXME" title="Services">services</a></li>
@@ -70,13 +73,27 @@
         <section class="image_navigation">
           <div class="wrapper">
             <ul class="navigation_elements">
-              <li class="nav_element">all</li>
-              <li class="nav_element">wallpapers</li>
-              <li class="nav_element">logos</li>
-              <li class="nav_element">business card</li>
-              <li class="nav_element">stationary</li>
-              <li class="nav_element">websites</li>
-              <li class="nav_element">mobile apps</li>
+              <li class="nav_element">
+                <a href="#FIXME" title="All" class="active_btn">all</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Wallpapers">wallpapers</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Logos">logos</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Business card">business card</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Stationary">stationary</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Websites">websites</a>
+              </li>
+              <li class="nav_element">
+                <a href="#FIXME" title="Mobile apps">mobile apps</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -85,54 +102,88 @@
         <!-- All images window section starts here. -->
         <section class="all_images_window">
           <div class="wrapper">
-            <figure class="figure_div business_card logo websites mobile_apps">
-              <img src="assets/images/image1.png" alt="Kate and julia" />
-            </figure>
-            <figure class="figure_div business_card logo websites mobile_apps">
-              <img src="assets/images/image2.png" alt="Nuvem" />
-            </figure>
-            <figure class="figure_div websites">
-              <img src="assets/images/image3.png" alt="Project title" />
-            </figure>
-            <figure class="figure_div wallpaper stationary">
-              <img src="assets/images/image4.png" alt="Library" />
-            </figure>
-            <figure class="figure_div">
-              <img src="assets/images/image5.png" alt="Mercado" />
-            </figure>
-            <figure class="figure_div business_card logo websites">
-              <img src="assets/images/image6.png" alt="Gira o mundo" />
-            </figure>
-            <figure class="figure_div wallpaper stationary">
-              <img src="assets/images/image7.png" alt="Furniture" />
-            </figure>
-            <figure class="figure_div business_card">
-              <img src="assets/images/image8.png" alt="Prefect" />
-            </figure>
-            <figure class="figure_div business_card">
-              <img src="assets/images/image9.png" alt="Love" />
-            </figure>
-            <figure class="figure_div wallpaper stationary">
-              <img src="assets/images/image10.png" alt="Dining" />
-            </figure>
-            <figure class="figure_div business_card logo websites mobile_apps">
-              <img src="assets/images/image11.png" alt="Kate and julia" />
-            </figure>
-            <figure class="figure_div stationary websites">
-              <img src="assets/images/image12.png" alt="Shop" />
-            </figure>
-            <figure class="figure_div websites">
-              <img src="assets/images/image13.png" alt="Coco ville" />
-            </figure>
-            <figure class="figure_div stationary websites">
-              <img src="assets/images/image14.png" alt="Coco ville" />
-            </figure>
-            <figure class="figure_div wallpaper stationary websites">
-              <img src="assets/images/image15.png" alt="Spicemode" />
-            </figure>
-            <figure class="figure_div">
-              <img src="assets/images/image16.png" alt="Paper" />
-            </figure>
+            <ul>
+              <li class="figure_div business_card logo websites mobile_apps">
+                <a href="#FIXME" title="Kate and julia"
+                  ><img src="assets/images/image1.png" alt="Kate and julia"
+                /></a>
+              </li>
+              <li class="figure_div business_card logo websites mobile_apps">
+                <a href="#FIXME" title="Nuvem"
+                  ><img src="assets/images/image2.png" alt="Nuvem"
+                /></a>
+              </li>
+              <li class="figure_div websites">
+                <a href="#FIXME" title="Project title"
+                  ><img src="assets/images/image3.png" alt="Project title"
+                /></a>
+              </li>
+              <li class="figure_div wallpaper stationary">
+                <a href="#FIXME" title="Library"
+                  ><img src="assets/images/image4.png" alt="Library"
+                /></a>
+              </li>
+              <li class="figure_div">
+                <a href="#FIXME" title="Mercado"
+                  ><img src="assets/images/image5.png" alt="Mercado"
+                /></a>
+              </li>
+              <li class="figure_div business_card logo websites">
+                <a href="#FIXME" title="Gira o mundo"
+                  ><img src="assets/images/image6.png" alt="Gira o mundo"
+                /></a>
+              </li>
+              <li class="figure_div wallpaper stationary">
+                <a href="#FIXME" title="Furniture"
+                  ><img src="assets/images/image7.png" alt="Furniture"
+                /></a>
+              </li>
+              <li class="figure_div business_card">
+                <a href="#FIXME" title="Prefect"
+                  ><img src="assets/images/image8.png" alt="Prefect"
+                /></a>
+              </li>
+              <li class="figure_div business_card">
+                <a href="#FIXME" title="Love"
+                  ><img src="assets/images/image9.png" alt="Love"
+                /></a>
+              </li>
+              <li class="figure_div wallpaper stationary">
+                <a href="#FIXME" title="Dining"
+                  ><img src="assets/images/image10.png" alt="Dining"
+                /></a>
+              </li>
+              <li class="figure_div business_card logo websites mobile_apps">
+                <a href="#FIXME" title="Kate and julia"
+                  ><img src="assets/images/image11.png" alt="Kate and julia"
+                /></a>
+              </li>
+              <li class="figure_div stationary websites">
+                <a href="#FIXME" title="Shop"
+                  ><img src="assets/images/image12.png" alt="Shop"
+                /></a>
+              </li>
+              <li class="figure_div websites">
+                <a href="#FIXME" title="Coco ville"
+                  ><img src="assets/images/image13.png" alt="Coco ville"
+                /></a>
+              </li>
+              <li class="figure_div stationary websites">
+                <a href="#FIXME" title="Coco ville"
+                  ><img src="assets/images/image14.png" alt="Coco ville"
+                /></a>
+              </li>
+              <li class="figure_div wallpaper stationary websites">
+                <a href="#FIXME" title="Spicemode"
+                  ><img src="assets/images/image15.png" alt="Spicemode"
+                /></a>
+              </li>
+              <li class="figure_div">
+                <a href="#FIXME" title="Paper"
+                  ><img src="assets/images/image16.png" alt="Paper"
+                /></a>
+              </li>
+            </ul>
           </div>
         </section>
         <!-- All images window section ends here. -->
@@ -202,43 +253,61 @@
             <div class="flickr_galery">
               <h2>flickr galery</h2>
               <div class="gallery_img">
-                <figure>
-                  <img src="assets/images/fimage1.png" alt="Gira dwundo" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage2.png" alt="Ueo" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage3.png" alt="Design" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage4.png" alt="Color" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage5.png" alt="Milk" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage6.png" alt="Letter" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage7.png" alt="Setting plate" />
-                </figure>
-                <figure>
-                  <img src="assets/images/fimage8.png" alt="Cups" />
-                </figure>
+                <ul>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Gira dwundo"
+                      ><img src="assets/images/fimage1.png" alt="Gira dwundo"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Ueo"
+                      ><img src="assets/images/fimage2.png" alt="Ueo"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Design"
+                      ><img src="assets/images/fimage3.png" alt="Design"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Color"
+                      ><img src="assets/images/fimage4.png" alt="Color"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Milk"
+                      ><img src="assets/images/fimage5.png" alt="Milk"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Letter"
+                      ><img src="assets/images/fimage6.png" alt="Letter"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Setting plate"
+                      ><img src="assets/images/fimage7.png" alt="Setting plate"
+                    /></a>
+                  </li>
+                  <li class="figure_div">
+                    <a href="#FIXME" title="Cups"
+                      ><img src="assets/images/fimage8.png" alt="Cups"
+                    /></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="footer_bottom">
-            <p>&copy; 2014 nerva, all right reserved</p>
+            <p>&copy; 2014 <a href="index.html" title="Nerva">nerva</a>, all right reserved</p>
             <ul>
-              <li><a href="#FIXME" class="icon google_plus">l</a></li>
-              <li><a href="#FIXME" class="icon twitter">l</a></li>
-              <li><a href="#FIXME" class="icon pinterest">l</a></li>
-              <li><a href="#FIXME" class="icon dribble">l</a></li>
-              <li><a href="#FIXME" class="icon linkedin">l</a></li>
-              <li><a href="#FIXME" class="icon facebook">l</a></li>
+              <li><a href="#FIXME" class="icon google_plus">google</a></li>
+              <li><a href="#FIXME" class="icon twitter">twitter</a></li>
+              <li><a href="#FIXME" class="icon pinterest">pinterest</a></li>
+              <li><a href="#FIXME" class="icon dribble">dribbble</a></li>
+              <li><a href="#FIXME" class="icon linkedin">linkedin</a></li>
+              <li><a href="#FIXME" class="icon facebook">facebook</a></li>
             </ul>
           </div>
         </div>
