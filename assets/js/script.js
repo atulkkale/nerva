@@ -1,5 +1,7 @@
 var nav_element = document.querySelectorAll('.nav_element a'); // Here we select all navigation elements.
-var images_figure_div = document.getElementsByClassName('figure_div'); // Here we select all images.
+var images_figure_div = document.getElementsByClassName('figure_div'); // Here we select all images in all images window section.
+var fixed_div = document.getElementsByClassName('fixed_div'); // Here we select all images including footer images.
+console.log(fixed_div);
 var hamburger = document.querySelector('.hamburger');
 var hamburger_close = document.getElementById('hamburger_close');
 
@@ -12,7 +14,7 @@ nav_element.forEach(function (item, index) {
   item.addEventListener('click', active_button); // This function gives styles to active category and remove styles of unactive category.
 });
 
-for (x of images_figure_div) {
+for (x of fixed_div) {
   x.addEventListener('click', present_image); // This function present image in fixed window.
 }
 
