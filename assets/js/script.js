@@ -109,19 +109,28 @@ function filter_and_show_img(e) {
 
 function show_figure_div(element) {
   // This function make element show itself.
-  element.style.cssText = 'display: block;';
+  element.classList.remove('hide_figure_div');
+  element.classList.add('show_figure_div');
+  console.log(element.firstElementChild.firstElementChild);
   setTimeout(function () {
-    element.firstElementChild.firstElementChild.style.cssText =
-      'transition: .5s; width: 100%; height: 100%; opacity: 1;';
+    element.firstElementChild.firstElementChild.classList.remove(
+      'hide_figure_img'
+    );
+    element.firstElementChild.firstElementChild.classList.add(
+      'show_figure_img'
+    );
   }, 500);
 }
 
 function hide_figure_div(element) {
   // This function make element hide itself.
-  element.firstElementChild.firstElementChild.style.cssText =
-    'transition: .5s; width: 0; height: 0; opacity: 0;';
+  element.firstElementChild.firstElementChild.classList.remove(
+    'show_figure_img'
+  );
+  element.firstElementChild.firstElementChild.classList.add('hide_figure_img');
   setTimeout(function () {
-    element.style.cssText = 'display: none;';
+    element.classList.remove('show_figure_div');
+    element.classList.add('hide_figure_div');
   }, 500);
 }
 

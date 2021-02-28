@@ -316,6 +316,27 @@ header nav ul li:hover::after {
   height: 100%;
 }
 
+.show_figure_div {
+  display: block;
+}
+
+.show_figure_img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hide_figure_div {
+  display: none;
+}
+
+.hide_figure_img {
+  transition: 0.5s;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 .present_image {
   position: fixed;
   display: flex;
@@ -327,7 +348,7 @@ header nav ul li:hover::after {
   top: 0;
   background-color: #1f1f1f;
   z-index: 7;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .present_image a img {
@@ -457,7 +478,7 @@ footer .wrapper .footer_top div h2 {
   text-transform: capitalize;
 }
 
-.footer_bottom p a{
+.footer_bottom p a {
   color: #919191;
 }
 
@@ -472,43 +493,69 @@ footer .footer_bottom .icon {
   padding: 6px;
   border-radius: 100px;
   margin-right: 10px;
-  text-indent: -200em;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
-.footer_bottom .icon:hover {
+.footer_bottom .icon:hover::after {
   color: #323232;
   transition: all 0.5s;
 }
 
-/* .google_plus::after {
+.google_plus::after {
   content: '\f0d5';
   color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 0;
 }
 
 .twitter::after {
   content: '\f099';
   color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px;
 }
 
 .pinterest::after {
   content: '\f231';
   color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 4px;
 }
 
 .dribble::after {
   content: '\f17d';
   color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 2px;
 }
 
 .linkedin::after {
   content: '\f0e1';
   color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 3px;
 }
 
 .facebook::after {
   content: '\f39e';
   color: #a7a7a7;
-} */
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 5px;
+}
 
 /* Footer section ends here. */
 /* Style sheet ends here. */
@@ -619,7 +666,7 @@ footer .footer_bottom .icon {
     margin-bottom: 40px;
   }
 
-  .footer_bottom ul li .icon:hover {
+  .footer_bottom ul li .icon:hover::after {
     color: #a7a7a7;
   }
 
@@ -645,6 +692,12 @@ footer .footer_bottom .icon {
 
   .footer_bottom p {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .footer_bottom ul {
+    flex-direction: column;
   }
 }
 
