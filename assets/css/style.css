@@ -361,7 +361,8 @@ header nav ul li:hover::after {
   color: #dadada;
   font-size: 20px;
   position: absolute;
-  bottom: 10px;
+  top: 30px;
+  right: 30px;
 }
 
 .figure_div {
