@@ -113,7 +113,6 @@ function show_figure_div(element) {
   // This function make element show itself.
   element.classList.remove('hide_figure_div');
   element.classList.add('show_figure_div');
-  console.log(element.firstElementChild.firstElementChild);
   setTimeout(function () {
     element.firstElementChild.firstElementChild.classList.remove(
       'hide_figure_img'
@@ -141,12 +140,10 @@ function present_image(e) {
 
   switch (image.tagName) {
     case 'IMG':
-      console.log('img');
       image.parentNode.parentNode.classList.add('present_image');
       break;
 
     case 'LI':
-      console.log('li');
       image.classList.remove('present_image');
       image_present_click = 0;
 
