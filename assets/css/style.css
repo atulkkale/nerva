@@ -1,74 +1,86 @@
 @charset "utf-8";
 
-/*------------------------------------------------------------------
-  [Table of contents]
-  * To keep an overview of structure of your code, we make use of table of 
-  * content. Table of content is use display the overall tree structure of your
-  * Layout. 
-  * (NOTE: Remove this commented code once you start developing the code.
-  * Remove the following table of content and add your own as this is just and 
-  * example to let you know)
-
-  1. CSS Reset Code
-    1.1. Eric Meyers Reset/HTML5 display-role reset for older browsers
-    1.2. Clear Fix
-    1.3. Font class declaration
-  2. Body
-  3. Header / .header
-    2.1. Navigation / .navbar
-  4. Content / .content
-    4.1. Left column / .leftcolumn
-    4.2. Right column / .rightcolumn
-    4.3. Sidebar / .sidebar
-      4.3.1. RSS / .rss
-      4.3.2. Search / .search
-      4.3.3. Boxes / .box
-      4.3.4. Sideblog / .sideblog
-      4.3.5. Advertisements / .ads
-  5. Footer / .footer
-  ------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Color codes]
-  * Mention the color code you have used in your html document for the respective
-  * elements given as follow. 
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following color code and add your own as this is just and 
-  * example to let you know)
-
-  Header nav: #e5e5df (Cararra)
-  Header nav a (hover): #fff (white)
-  Header nav a (active): #fff (white)
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Typography]
-  * Mention the Typography you have used in your html document for the respective
-  * elements given as follow.
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following typography and add your own as this is just and 
-  * example to let you know)
-
-  Header nav a: 16px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  View-register li a : 12px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  -------------------------------------------------------------------*/
-
-/* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
-
-/* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -78,17 +90,31 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -104,7 +130,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   border: 0;
@@ -119,37 +147,560 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
+sup {
+  top: -0.7em;
+}
 
-sub { bottom: -.25em; }
-
-/* 1.2. Clear Fix
-   ========================================================================== */
+sub {
+  bottom: -0.25em;
+}
 
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
-.cf:after { clear: both; }
-
-/* 1.3. Font class declaration
-   ========================================================================== */
-/*
- * Mention the font property (eg: font-family, font-size, font-weight, font-style
- * etc) that have been commonly used in the html document. Make a class of it and
- * apply to the element wherever it is needed. If any single property in changed,
- * then override only that property in the particular class which is used for the
- * element.
- * (NOTE: Remove this commented code once you start 
- * developing the code. Remove the following font class and add your own
- * as this is just and example to let you know. If there is only one font family
- * followed throughout the site, then menstion the font property in body. No need
- * of creating an extra class for it) */
+.cf:after {
+  clear: both;
+}
 
 .futura-bold-font {
-  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica,
+    sans-serif;
   font-style: normal;
   font-weight: bold;
 }
+
+/* Style sheet starts here. */
+
+.container {
+  background-color: #1f1f1f;
+}
+
+.wrapper {
+  max-width: 1350px;
+  width: 61.5%;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header section starts here. */
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #292929;
+}
+
+header h1 {
+  font-size: 33px;
+  font-weight: 901;
+  letter-spacing: 2px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-right: 30px;
+  position: relative;
+}
+
+header nav ul li:last-child {
+  margin: 0;
+}
+
+header .wrapper nav ul li a {
+  color: #dadada;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  width: 27px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 2px;
+  text-indent: -200em;
+  border-radius: 10px;
+}
+
+.hamburger_close {
+  display: none;
+}
+
+header nav ul li::after {
+  content: '';
+  border-bottom: 3px solid #8fd0a6;
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 98%;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+header nav ul li:hover::after {
+  opacity: 1;
+}
+
+/* Header section ends here. */
+/* Main section starts here. */
+
+/* Image navigation section starts here. */
+
+.image_navigation .wrapper {
+  padding: 20px;
+}
+
+.image_navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.image_navigation ul li {
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.image_navigation ul li a {
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.image_navigation ul li:hover {
+  background-color: #8fd0a6;
+  transition: 0.5s;
+}
+
+.active_btn {
+  background-color: #8fd0a6;
+  transition: 0.5s;
+}
+
+/* Image navigation section ends here. */
+/* All image window section starts here. */
+
+.all_images_window .wrapper {
+  min-height: 650px;
+}
+
+.all_images_window .wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  list-style: none;
+}
+
+.all_images_window li img {
+  width: 100%;
+  height: 100%;
+}
+
+.show_figure_div {
+  display: block;
+}
+
+.show_figure_img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hide_figure_div {
+  display: none;
+}
+
+.hide_figure_img {
+  transition: 0.5s;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.present_image {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #1f1f1f;
+  z-index: 7;
+  transition: all 1s;
+}
+
+.present_image a img {
+  width: 35vw;
+  height: auto;
+}
+
+.present_image a::after {
+  content: 'For exit click on blank space.';
+  color: #dadada;
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.fixed_div {
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.fixed_div a:hover img {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.present_image a:hover img {
+  transform: none;
+}
+
+/* All image window section ends here. */
+/* Main section ends here. */
+
+/* Footer section starts here. */
+
+footer .wrapper .footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .wrapper .footer_top {
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #323232;
+  margin: 35px 0 30px 0;
+}
+
+footer .wrapper ul {
+  list-style: none;
+}
+
+footer .wrapper .footer_top div {
+  flex-basis: 23%;
+}
+
+footer .wrapper .footer_top div h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+}
+
+.text_widget p {
+  margin-bottom: 20px;
+}
+
+.text_widget p,
+.recent_post ul li a {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+
+.text_widget p::first-letter {
+  text-transform: uppercase;
+}
+
+.recent_post ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #323232;
+}
+
+.recent_post ul li:last-child {
+  border: none;
+}
+
+.recent_post ul li a {
+  text-transform: capitalize;
+}
+
+.popular_tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular_tags ul li {
+  background-color: #8fd0a6;
+  padding: 7px 12px;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+}
+
+.popular_tags ul li:hover {
+  transition: 0.5s;
+  background-color: #ccc;
+}
+
+.gallery_img ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.gallery_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer_bottom p {
+  font-size: 12px;
+  color: #919191;
+  text-transform: capitalize;
+}
+
+.footer_bottom p a {
+  color: #919191;
+}
+
+.footer_bottom ul {
+  display: flex;
+}
+
+footer .footer_bottom .icon {
+  color: #a7a7a7;
+  font-family: 'Font Awesome 5 Brands';
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 100px;
+  margin-right: 10px;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.footer_bottom .icon:hover::after {
+  color: #323232;
+  transition: all 0.5s;
+}
+
+.google_plus::after {
+  content: '\f0d5';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 0;
+}
+
+.twitter::after {
+  content: '\f099';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px;
+}
+
+.pinterest::after {
+  content: '\f231';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 4px;
+}
+
+.dribble::after {
+  content: '\f17d';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 2px;
+}
+
+.linkedin::after {
+  content: '\f0e1';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 3px;
+}
+
+.facebook::after {
+  content: '\f39e';
+  color: #a7a7a7;
+  text-indent: 0;
+  font-size: 18px;
+  float: left;
+  padding: 1px 5px;
+}
+
+/* Footer section ends here. */
+/* Style sheet ends here. */
+
+/* Responsive stylesheet starts here. */
+
+@media only screen and (max-width: 1081px) {
+  /* Header section starts here. */
+
+  .present_image a img {
+    width: 50vw;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  header .wrapper,
+  header nav ul,
+  footer .wrapper .footer_top,
+  .footer_bottom {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hamburger_close {
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger_close {
+    color: #1f1f1f;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    top: 40px;
+    right: 40px;
+    position: fixed;
+    z-index: 2;
+  }
+
+  header .wrapper nav ul li a {
+    color: #1f1f1f;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  header nav ul li::after {
+    display: none;
+  }
+
+  header nav ul li:last-child {
+    margin: 10px 0;
+  }
+
+  .image_navigation ul li:hover {
+    background-color: transparent;
+  }
+
+  .navigation_elements {
+    overflow: scroll;
+    padding-bottom: 10px;
+  }
+
+  .menu_hide {
+    display: none;
+  }
+
+  .menu_show {
+    display: flex;
+  }
+
+  .all_images_window figure img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .all_images_window .wrapper ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Header section ends here. */
+  /* Footer section starts here. */
+
+  .popular_tags ul li:hover {
+    background-color: #8fd0a6;
+  }
+
+  .flickr_galery {
+    margin-bottom: 40px;
+  }
+
+  .footer_bottom ul li .icon:hover::after {
+    color: #a7a7a7;
+  }
+
+  .footer_bottom p {
+    margin-bottom: 20px;
+  }
+
+  .flickr_galery {
+    align-self: flex-start;
+  }
+
+  /* Footer section ends here. */
+}
+
+@media only screen and (max-width: 360px) {
+  .all_images_window .wrapper ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+  }
+
+  .footer_bottom p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .footer_bottom ul {
+    flex-direction: column;
+  }
+}
+
+/* Responsive stylesheet ends here. */
